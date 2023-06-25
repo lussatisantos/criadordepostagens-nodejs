@@ -1,0 +1,17 @@
+{
+  "name": "pri-projecto-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lussati Santos",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "handle": "^1.0.0",
+    "handlebar": "^1.0.0",
+    "handlebars": "^4.7.7"
+  }
+}
