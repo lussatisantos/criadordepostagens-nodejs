@@ -32,6 +32,13 @@ const Post = require('./models/Post')
         res.send('Houve um erro' + erro)
        })
     })
+    app.get('/apagar/:id', function(req, res){
+        Post.destroy({where: {'id': req.params.id}}).then(function(){
+            res.send('Postagem apagada com sucesso!')
+        }).catch(function(erro){
+            res.send('Essa postagem nao existe!')
+        })
+    })
 
 app.listen(9890, function(req, res) {
     console.log('Servidor esta ligado')
